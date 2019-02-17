@@ -43,12 +43,11 @@ header ul li a{
     transition: 0.9s; /* задержка при наведении*/
 }
 
-}
-.btn, .active, header ul a:hover{
+
+.btn, .active, header ul a:hover {
     background: #76c38f;
     border-radius: 15px;
     
-
 }
 header .container{
     justify-content: space-between;
