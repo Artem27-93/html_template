@@ -117,7 +117,7 @@ header .container{
     padding: 8px;
 }
 #services{
-    margin: 60px auto 45px auto;
+    margin: 60px auto;
 }
 .service {
     width: 25%;
@@ -162,7 +162,9 @@ header .container{
     font-size: 28px;
     margin: 10px 0 15px 0;
 }
-
+#gallery {
+    margin-top: 40px;
+}
 
 
 
@@ -176,10 +178,11 @@ div#gallery .image-block:nth-child(3n+1) .wrap{
     margin-left: 0;
 }
 #gallery .wrap {
-    box-shadow: 0 0 5px 2px #00000063;
+    border: 5px solid #ddd;
     margin: 16px;
     position: relative;
-    min-height: 205px;
+    min-height: 178px;
+    transition: 0.5s;
 } 
 #gallery .wrap img {
     width: 100%;
@@ -193,12 +196,62 @@ div#gallery .image-block:nth-child(3n+1) .wrap{
     padding: 5px 0;
     width: 100%;
     text-align: center;
+    transition: 0.5s;
+}
+#gallery .wrap:hover{
+    border-color:  #76c38f;
+    cursor: pointer;
+
+}
+#gallery .wrap:hover span{
+    opacity: 0;
+}
+.latest{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 965px;
+    font-weight: bold;
+    font-size: 25px;
+    height: 3px;
+    background: #000;
+    position: relative;
+    
+}
+.latest span{
+    background: #303030;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    max-width: 260px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    top: -25px;
 }
 
-
-
-
-
+@media(max-width:1030px){
+    #gallery .image-block .wrap, #services .service .wrap{
+        margin: 8px !important;
+    }
+    .latest {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    header ul{
+        margin-right: 0;
+    }
+    
+}
+@media(max-width:840px){
+    #slider .image{
+        max-width: 260px;
+        
+    }
+    #gallery .image-block{
+        width: 50%;
+}
 @media(max-width:700px){
     header{
         text-align: center;
@@ -224,21 +277,25 @@ div#gallery .image-block:nth-child(3n+1) .wrap{
         margin: 15px auto;
     }
     #services {
-        margin-top: 15px;
+        margin: 15px 0 0;
     }
     .service {
         width: 50%;
         margin-bottom: 15px;
-}
-@media(max-width:840px){
-    #slider .image{
-        max-width: 260px;
-        
     }
+    #gallery .image-block{
+        width: 50%;
+    }
+    .latest {
+        margin: 20px; 
+    }
+
 }
+
 @media(max-width:580px){
-    .service{
+    .service, #gallery .image-block {
         width: 100%;
     }
+    
 }    
 
