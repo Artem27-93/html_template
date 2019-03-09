@@ -230,7 +230,13 @@ div#gallery .image-block:nth-child(3n+1) .wrap{
     position: relative;
     top: -25px;
 }
-
+#footer-top-wrap {
+    background: #303030;
+}
+.footer-top-block {
+    width: 25%;
+    color: #979797;
+}
 @media(max-width:1030px){
     #gallery .image-block .wrap, #services .service .wrap{
         margin: 8px !important;
