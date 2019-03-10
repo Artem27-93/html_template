@@ -295,6 +295,9 @@ div#gallery .image-block:nth-child(3n+1) .wrap{
     header ul{
         margin-right: 0;
     }
+    .footer-top-block {
+        width: 50%;
+    }
     
 }
 @media(max-width:840px){
@@ -349,6 +352,15 @@ div#gallery .image-block:nth-child(3n+1) .wrap{
     .service, #gallery .image-block {
         width: 100%;
     }
-    
+    .footer-top-block {
+        width: 100%;
+        text-align:center; 
+    }
+    #footer-top-wrap {
+        padding: 15px;
+    }
+    #footer-top-wrap h3{
+        margin-top: 0;
+    }
 }    
 
